@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "description": "voting add for node js practice",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "shubham kumar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
