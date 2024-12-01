@@ -1,0 +1,40 @@
+Voting app.
+
+
+
+Functionalities
+----------------
+
+1. User can signup.
+2. User can login.
+3. Get list of candidate along with live number of votes sorted by vote count.
+4. One user can give vote to only one candidate only one time.
+5. User will have a unique id like aadhar card number.
+6. User can login using aadhar number and password.
+7. User can change password.
+8. Get list of candidate.
+9. There is one user with role is admin who can maintain candidate table and should not be able to vote.
+
+
+Routes
+-------
+
+User Authentication:
+    /signup: POST - Create a new user account.
+    /login: POST - Login to an existing account.
+
+Voting:
+    /vote/:candidateId: POST - Vote a specific candidate.
+    /candidates: GET - Get list of candidate.
+
+Vote Counts:
+    /vote/counts: GET - Get list of candidate sorted by vote count.
+
+User Profile:
+    /profile: GET - Get user profile information.
+    /profile/password: PUT - Change the user's password.
+
+Admin Candidate management:
+    /candidates: POST - Create new candidate.
+    /candidate/:candidateId PUT - Update existing candidate.
+    /candidate/:candidateId DELETE - Delete existing candidate.
